@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form SVU IWB202 S24 HW</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+    <header>نحتاج بعض التفاصيل قبل إكمال عملية الشراء</header>
+    <form id="form">
+        <h2 style="color: black; font-family: Verdana, Geneva, Tahoma, sans-serif;">-املأ الاستمارة التالية-</h2>
+        <label class="labels" for="">الاسم الثلاثي</label>
+        <input class="inputs arabicInput" type="text">
+        <label class="wrong arabicError" for=""></label>
+        <label class="labels" for="">الرقم الوطني</label>
+        <input class="inputs numberInput" type="text" maxlength="11">
+        <label class="wrong numberError" for=""></label>
+        <label class="labels" for="">تاريخ الولادة</label>
+        <input class="inputs" type="text" placeholder="dd-mm-yyyy">
+        <label class="empty" for=""></label>
+        <label class="labels" for="">رقم الموبايل </label>
+        <input class="inputs phoneInput" type="text" maxlength="10">
+        <label class="wrong phoneError" for=""></label>
+        <label class="labels" for="">البريد الالكتروني</label>
+        <input class="inputs" type="email" placeholder="example@gmail.com">
+        <label class="empty" for=""></label>
+    </form>
+    <button id="btnSub">إرسال</button>
+    <a class="webLink" href="books.html">الرجوع</a>
+    <div id="overlay-container">
+    </div>
+        <div id="overlay">
+            <button id="remove"><i class="fa-solid fa-x"></i></button>
+            <p>شكراً لك على شرائك من مكتبتنا</p>
+            
+        <script src="jquery.js"></script>
+        <script src="myFunctions.js"></script>
+    </body>
+    </html>

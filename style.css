@@ -1,0 +1,314 @@
+/* home.html */
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #0099CC;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero {
+    width: 80dvw;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+.table {
+    width: 100%;
+    min-height: 70dvh;
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    background-color: #005A82;
+}
+.table,td,th,tr,.details{
+    border: 1px solid black;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.table th {
+    width: 20%;
+    height: 20%;
+    background-color: #4EC6E9;
+}
+.table td,details {
+    height: 16%;
+    background-color: white;
+}
+#webLink{
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin: 30px;
+    color: white;
+}
+/* about.html ----------------------------- */
+.bookLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 40%;
+    border: 5px solid black;
+}
+h2 {
+    text-align: center;
+    color: white;
+
+}
+h3 {
+    text-align: right;
+    align-self: flex-end;
+    margin: 30px;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: white;
+}
+.aboutXt {
+    font-size: larger;
+    text-align: right;
+    align-self: flex-end;
+    line-height: 40px;
+    margin: 0 30px;
+    color: white;
+}
+h1 {
+    color: white;
+
+}
+.contacts a {
+    color: whitesmoke;
+    background: none;
+    border: none;
+    font-size: xx-large;
+    font-weight: 100;
+}
+#contactsBTN button{
+    width: 200px;
+    height: 50px;
+    margin: 30px;
+    border-radius: 30px;
+}
+.webLink {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    padding: 20px;
+}
+/* books.html -----------------------------*/
+b {
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.infoBtn{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.infoBtn:active {
+    scale: 1.1;
+}
+.infoContainer {
+    min-width: 100%;
+}
+.info {
+    overflow-y: hidden;
+    height: 0px!important;
+    border: none;
+    text-align: right;
+    padding: 0;
+    transition: all 0.3s ;
+    font-size: 0;
+}
+.active {
+    min-height: 120px !important;
+    padding: 8px;
+    font-size: large;
+}
+.active b{
+    font-size: larger;
+}
+.choose {
+    width: 30px;
+    height: 30px; 
+    border: 1px solid rgb(155, 155, 155);
+    border-radius: 50%;
+    background-color: white;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    transition: all 0.25s;
+    cursor: pointer;
+}
+.choose:active {
+    scale: 1.1;
+}
+.choosen {
+    background-color: rgb(61, 233, 27);
+}
+.importantTopics {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 0px!important;
+    transition: all 0.3s;
+}
+.importantTopics p {
+    font-size: 0;
+    transition: all 0.3s;
+}
+.active p {
+    font-size: large;
+}
+#continue {
+    width: 15dvw;
+    height: 40px;
+    background-color: orange;
+    font-size: larger;
+    font-weight: 600;
+    border-radius: 8px;
+    align-self: flex-end;
+    margin-top: 15px;
+    transition: all 0.18s;
+    cursor: pointer;
+    border: 1px solid black;
+}
+#continue:active {
+    scale: 0.95;
+    font-size: medium;
+}
+/* form.html-------------- */
+header {
+    font-size: xx-large;
+    font-weight: bolder;
+    text-decoration: underline;
+    margin: 20px;
+}
+#form {
+    background-color: white;
+    width: 70dvw;
+    height: 85dvh;
+    display: grid;
+    grid-template: repeat(15, 1fr) / 100%;
+    border-radius: 25px;
+    padding: 20px;
+}
+#form input {
+    justify-self: center;
+}
+#btnSub {
+    justify-self: center;
+    color: black !important;
+    text-decoration: none !important;
+    width: 300px;
+    padding: 5px;
+    margin: 20px;
+    background-color: #ff7d32;
+    font-size: larger;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+#btnSub:hover {
+    cursor: pointer;
+} 
+#btnSub:active {
+    scale: 0.95;
+    filter: brightness(0.8);
+}
+.labels ,.wrong{
+    color: black;
+    justify-self: center;
+    transition: all 0.3s;
+    font-size: medium;
+}
+.inputs {
+    width: 400px;
+    border-radius: 25px;
+    padding: 15px;
+    font-size: larger;
+    text-align: center;
+    border: 2px solid black;
+
+}
+.wrong {
+    color: red;
+}
+#overlay-container {
+    width: 100dvw;
+    height: 100dvh;
+    background-color: black;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.5;
+}
+#overlay {
+    width: 80dvw;
+    height: 90dvh;
+    background-color: white;
+    position: absolute;
+    z-index: 3;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#remove {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: x-large;
+    border: none;
+    background: none;
+}
+#remove:hover {
+    cursor: pointer;
+}
+#remove:active {
+    scale: 0.9;
+}
+#overlay p {
+    font-size: x-large;
+}
+.table-container {
+    width: 60%;
+    height: 15%;
+    background-color: rgb(255, 73, 73);
+}
+.book-details {
+    width: 100% ;
+    height: 100%;
+    background-color: gray;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    font-size: x-large;
+}
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    background-color: white;
+    border: 5px solid black;
+    grid-area: 1 / 1 / 3 / 2;
+}
+.id-number{
+    background-color: white;
+    border: 5px solid black;
+}
+.price {
+    background-color: white;
+    border: 5px solid black;
+}

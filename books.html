@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books SVU IWB202 S24 HW</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+    <div class="hero">
+        <table id="table2" class="table">
+        <b id="warning" style="color: rgb(230, 0, 0); font-size: xx-large;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;"></b>
+            <tr>
+                <th>اختيار</th>
+                <th>إظهار التفاصيل</th>
+                <th>السعر</th>
+                <th>العنوان</th>
+                <th>ISBN رمز الكتاب</th>
+            </tr>
+            <!-- ! -->
+            <tr>
+                <td><button data-id="954-456132789" data-name="البؤساء" data-price="30000" class="choose"><i class="fa-solid fa-check"></i></button></td>
+                <td><input onclick="showDetails(0)" class="infoBtn" type="checkbox"></td>
+                <td>30000 ل.س</td>
+                <td>البؤساء</td>
+                <td>954-456132789</td>
+            </tr>
+            <!-- s -->
+            <tr class="infoContainer">
+                <td class="info"  colspan="5">
+                    <b>الناشر: </b>دار العلم، للكاتب فكتور هوغو<br>
+                    <b>تصنيف الكتاب: </b> خيال تاريخي مأساة<br>
+                    <b>ملخص: </b>البؤساءأو البائسون هي رواية تاريخية ملحمية من تأليف الكاتب الفرنسي فكتور هوغو نشرت في سنة 1862، وتعد من أشهر روايات القرن التاسع عشر، إنه يصف وينتقد في هذا الكتاب الظلم الاجتماعي في فرنسا بين سقوط نابليون في 1815 والثورة الفاسلة ضد الملك لويس فيليب في 1832<br>
+                    <b>أهم المواضيع المطروحة: </b> المواضيع<br>
+                    <div class="importantTopics">
+                        <img src="pictures/الثورة الفرنسية.jpg" alt="" width="100px">
+                        <img src="pictures/كوزيت.jpg" alt="" width="50px">
+                        <img src="pictures/جان فالجان.jpg" alt="" width="50px">
+                        <p>تحدث الكتاب عن الثورة ضج الملك لويس</p>
+                        <p>تحدث عن قصة الشخصية كوزيت</p>
+                        <p>تحدث عن قصة السجين جان فالجان</p>
+                    </div>
+                </td>
+            </tr>
+            <!-- e -->
+            <tr>
+                <td><button data-id="954-16756325" data-name="العادات الذرية" data-price="40000" class="choose"><i class="fa-solid fa-check"></i></button></td>
+                <td><input onclick="showDetails(1)" class="infoBtn" type="checkbox"></td>
+                <td>40000 ل.س</td>
+                <td>العادات الذرية</td>
+                <td>954-16756325</td>
+            </tr>
+            <!-- ? -->
+            <!-- s -->
+            <tr class="infoContainer">
+                <td class="info"  colspan="5">
+                    <b>الناشر: </b> غير محدد، للكاتب جيمس كلير<br>
+                    <b>تصنيف الكتاب: </b>التنمية الذاتية<br>
+                    <b>ملخص: </b>يقدم "العادات الذرية" إطارًا عمليًا لفهم وتغيير العادات من خلال تغييرات صغيرة تؤدي إلى نتائج كبيرة على المدى الطويل. يركز الكتاب على أهمية الأنظمة بدلاً من الأهداف لتحقيق النجاح الشخصي.<br>
+                    <b>أهم المواضيع المطروحة: </b>المواضيع<br>
+                    <div class="importantTopics">
+                        <img src="pictures/البيئة.jpg" alt="" width="40px">
+                        <img src="pictures/التحسين المستمر.jpg" alt="" width="40px">
+                        <img src="pictures/تكوين العادات.jpg" alt="" width="40px">
+                        <p>يناقش كيف تؤثر البيئة المحيطة على عاداتنا</p>
+                        <p>يشدد على التحسينات الصغيرة اليومية</p>
+                        <p>يقدم الكتاب قوانين لتكوين العادات الجيدة وكسر العادات السيئة</p>
+                    </div>
+                </td>
+            </tr>
+            <!-- e -->
+            <tr>
+                <td><button data-id="954-423258741" data-name="جلسة علاج" data-price="80900" class="choose"><i class="fa-solid fa-check"></i></button></td>
+                <td><input onclick="showDetails(2)" class="infoBtn" type="checkbox"></td>
+                <td>80900 ل.س</td>
+                <td>جلسة علاج</td>
+                <td>954-423258741</td>
+            </tr>
+            <!-- ? -->
+            <!-- s -->
+            <tr class="infoContainer">
+                <td class="info"  colspan="5">
+                    <b>الناشر: </b>غير محدد، للكاتب سلمان العتيبي<br>
+                    <b>تصنيف الكتاب: </b>العلاج النفسي<br>
+                    <b>ملخص: </b>العلاج النفسي هو عملية تفاعلية تهدف إلى مساعدة الأفراد على التغلب على مشكلاتهم النفسية وتحسين صحتهم النفسية من خلال أساليب نفسية متنوعة. يتضمن ذلك جلسات فردية أو جماعية مع معالجين مؤهلين.<br>
+                    <b>أهم المواضيع المطروحة: </b>المواضيع<br>
+                    <div class="importantTopics">
+                        <img src="pictures/change.jpg" alt="" width="80px">
+                        <img src="pictures/supportive environment.jpg" alt="" width="80px">
+                        <img src="pictures/therapy types.jpg" alt="" width="80px">
+                        <p>التركيز على التغيير السلوكي</p>
+                        <p>أهمية البيئة الداعمة</p>
+                        <p>أنواع العلاج النفسي</p>
+                </td>
+            </tr>
+            <!-- e -->
+            <tr>
+                <td><button data-id="954-456296318" data-name="الأب الغني والأب الفقير" data-price="65000" class="choose"><i class="fa-solid fa-check"></i></button></td>
+                <td><input onclick="showDetails(3)" class="infoBtn" type="checkbox"></td>
+                <td>65000 ل.س</td>
+                <td>الأب الغني والأب الفقير</td>
+                <td>954-456296318</td>
+            </tr>
+            <!-- ? -->
+            <!-- s -->
+            <tr class="infoContainer">
+                <td class="info"  colspan="5">
+                    <b>الناشر: </b>مكتبة جرير، للكاتب روبرت ت.كيوساكي<br>
+                    <b>تصنيف الكتاب: </b>إدارة الأعمال، التعليم المالي<br>
+                    <b>ملخص: </b> يتناول كتاب "الأب الغني والأب الفقير" كيفية بناء الثروة وتحقيق الاستقلال المالي من خلال التعلم من تجارب المؤلف مع "الأب الغني" (والد صديقه) و"الأب الفقير" (والده البيولوجي). يركز الكتاب على أهمية الأصول والذكاء المالي وكيفية اتخاذ قرارات مالية سليمة.<br>
+                    <b>أهم المواضيع المطروحة: </b>ال<br>
+                    <div class="importantTopics">
+                        <img src="pictures/disciplined.jpg" alt="" width="80px">
+                        <img src= "pictures/financial thinking.jpg" alt="" width="80px">
+                        <img src="pictures/self study.jpg" alt="" width="80px">
+                        <p>الفرق بين الأصول والالتزامات</p>
+                        <p>التفكير المالي</p>
+                        <p>أهمية التعليم الذاتي</p>
+                </td>
+            </tr>
+            <!-- e -->
+            <tr>
+                <td><button data-id="954-741246096" data-name="التهم هذا الضفدع" data-price="28000" class="choose"><i class="fa-solid fa-check"></i></button></td>
+                <td><input onclick="showDetails(4)" class="infoBtn" type="checkbox"></td>
+                <td>28000 ل.س</td>
+                <td>التهم هذا الضفدع</td>
+                <td>954-741246096</td>
+            </tr>
+            <!-- ? -->
+             <!-- s -->
+             <tr class="infoContainer">
+                <td class="info"  colspan="5">
+                    <b>الناشر: </b>مكتبة خير جليس، للكاتب براين تريسي<br>
+                    <b>تصنيف الكتاب: </b>تطوير الذات، إدارة الوفت<br>
+                    <b>ملخص: </b> يقدم كتاب "التهم هذا الضفدع" استراتيجيات فعالة للتغلب على التسويف وتحسين الإنتاجية من خلال التركيز على المهام الأكثر أهمية وصعوبة أولاً. يتضمن الكتاب 21 طريقة تساعد الأفراد على إنجاز أعمالهم بكفاءة وسرعة.<br>
+                    <b>أهم المواضيع المطروحة: </b>المواضيع<br>
+                    <div class="importantTopics">
+                        <img src="pictures/20_80.jpg" alt="" width="90px">
+                        <img src="pictures/hard work.jpg" alt="" width="90px">
+                        <img src="pictures/procrastination.jpg" alt="" width="90px">
+                        <p>قاعدة 20/80</p>
+                        <p>أهمية البدء بالأصعب</p>
+                        <p>قوانين القضاء على التسويف</p>
+                </td>
+            </tr>
+            <!-- e -->
+        </table>
+        <button onclick="checking()" id="continue">متابعة</button>
+        <div>
+            <a class="webLink" href="home.html">Home page</a>
+            <a class="webLink" href="aboutUs.html">About Us page</a>
+        </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="myFunctions.js"></script>
+</body>
+</html>
