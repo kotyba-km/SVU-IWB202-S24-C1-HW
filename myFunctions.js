@@ -38,11 +38,10 @@
         var numberRegex = /^(0[1-9]|1[0-4])\d{9}$/;
         var inputPhone = $(".phoneInput").val();
         var validPrefixes = ['0995','099','0997','0987','0996','0982','0998','098','093','094','095','096']
-        if(inputName != ""){
-            if(!arabicRegex.test(inputName) ){
+        if(!arabicRegex.test(inputName) && inputName != "" ){
             $('.arabicError').text("الاسم يجب أن يكون باللغة العربية");
             $(".arabicInput").val("");
-            setTimeout(function() {$(".arabicError").text("");},5000);}
+            setTimeout(function() {$(".arabicError").text("");},5000);
         }else if(!numberRegex.test(inputSNumber) ||inputSNumber == "") {
             $('.numberError').text("يجب التأكد من إدخال الرقم الوطني");
             $(".numberInput").val("");
@@ -83,7 +82,7 @@
     $('#remove').click(function() {
     $('#overlay-container').hide();
     $('#overlay').hide();
-    window.location.href = 'index.html';
+    window.location.href = 'home.html';
     })
 
     // showing the order details through jquery 
