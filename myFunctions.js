@@ -83,7 +83,7 @@
     $('#remove').click(function() {
     $('#overlay-container').hide();
     $('#overlay').hide();
-    window.location.href = 'home.html';
+    window.location.href = 'index.html';
     })
 
     // showing the order details through jquery 
